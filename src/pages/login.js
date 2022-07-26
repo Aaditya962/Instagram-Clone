@@ -15,7 +15,6 @@ const Login = () => {
 
     const handleLogin = async (event) => {
         event.preventDefault();
-
         try {
             await firebase.auth().signInWithEmailAndPassword(emailAddress, password);
             navigate(ROUTES.DASHBOARD);
