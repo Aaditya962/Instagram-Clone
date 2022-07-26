@@ -10,7 +10,6 @@ export default function Photos({ photos }) {
           : photos.length > 0
           ? photos.map((photo) => (
               <div key={photo.docId} className="relative group">
-                {/* {console.log(photo.imageSrc)} */}
                 <img src={photo.imageSrc} alt={photo.caption} />
 
                 <div className="absolute bottom-0 left-0 bg-gray-200 z-10 w-full justify-evenly items-center h-full bg-black-faded group-hover:flex hidden">

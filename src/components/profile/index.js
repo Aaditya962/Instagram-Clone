@@ -26,7 +26,6 @@ export default function Profile({ user }) {
     }
     getProfileInfoAndPhotos();
   }, [user.username]);
-  console.log(user)
   return (
     <>
       <Header
